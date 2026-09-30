@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Register</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container bg-primary p-4 text-white my-4" style="width: 40%; min-width: 360px;">
+        <div class="collapse show" id="signin">
+            <h1 class="text-center">Login</h1>
+            <hr>
+            <form action="/login" method="post">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="username" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                </div>
+                {% if error %}
+                <p class="text-warning">Error : {{ error }}</p>
+                {% endif %}
+                <div class="mb-3 d-flex justify-content-end">
+                    <button class="btn btn-danger">Login</button>
+                </div>
+            </form>
+            <hr>
+            <div class="container">
+                <p>Don't have an account ? <a class="btn btn-light" data-bs-toggle="collapse"
+                        href="#signin">Register</a></p>
+            </div>
+        </div>
+
+        <div class="collapse" id="signin">
+            <h1 class="text-center">Register</h1>
+            <hr>
+            <form action="/register" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email2" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email2">
+                </div>
+                <div class="mb-3">
+                    <label for="newPass" class="form-label">Create new password</label>
+                    <input type="password" class="form-control" name="newPass" id="newPass">
+                </div>
+                <div class="mb-3">
+                    <label for="confPass" class="form-label">Confirm password</label>
+                    <input type="password" class="form-control" name="confPass" id="confPass">
+                </div>
+                <div class="mb-3 d-flex justify-content-end">
+                    <button class="btn btn-danger">Register</button>
+                </div>
+            </form>
+            <hr>
+            <div class="container">
+                <p>Already have an account ? <a class="btn btn-light" data-bs-toggle="collapse" href="#signin">Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+</body>
+
+</html>

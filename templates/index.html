@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomatoAidX</title>
+</head>
+
+<body class="bg-light">
+    {% include 'navbar.html '%}
+
+    <div class="container-fluid p-5 hero container-flex">
+        <div class="container p-5 container-flex flex-column">
+            <h1 class="text-center fw-bold" data-aos="fade-down" data-aos-duration="500">
+                TomatoAidX
+                <br>
+                Detect Disease Early, Maximize Your Yield
+            </h1>
+            <p class="fs-4 text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                The first line of defense against tomato disease.Get instant diagnoses with TomatoAidX.
+            </p>
+            <div class="container-flex gap-3">
+                <a href="/login" class="btn btn-danger" data-aos="fade-right" data-aos-duration="500"
+                    data-aos-delay="350">Get started</a>
+                <a href="/about" class="container-flex gap-3" data-aos="fade-left" data-aos-duration="500"
+                    data-aos-delay="350">
+                    Learn More
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5 p-4 bg-light">
+        <h1 class="text-center fw-bold fs-3">Benefits of TomatoAidX</h1>
+        <div class="row container-flex gap-3 mt-4">
+            <div class="col-md-3 hover-scale">
+                <div class="card shadow bg-white p-3">
+                    <h3 class="fs-4 fw-semibold text-center">Early Disease Detection</h3>
+                    <p class="fs-custom-2 text-center">
+                        Identify diseases in their earliest stages, often before visible
+                        symptoms appear to the naked eye. This allows for timely intervention and prevents widespread
+                        outbreaks.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 hover-scale">
+                <div class="card shadow bg-white p-3">
+                    <h3 class="fs-4 fw-semibold text-center"> Increased Yields</h3>
+                    <p class="fs-custom-2 text-center">
+                        By catching diseases early, you can minimize crop loss and maximize your
+                        harvest potential, leading to higher yields and greater profitability.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 hover-scale">
+                <div class="card shadow bg-white p-3">
+                    <h3 class="fs-4 fw-semibold text-center"> Reduced Costs</h3>
+                    <p class="fs-custom-2 text-center">
+                        Targeted treatments based on accurate diagnoses reduce the need for
+                        broad-spectrum pesticide applications, saving you money on chemicals and labor.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 hover-scale">
+                <div class="card shadow bg-white p-3">
+                    <h3 class="fs-4 fw-semibold text-center"> Easy to Use</h3>
+                    <p class="fs-custom-2 text-center">
+                        Our user-friendly app requires no specialized training. Simply upload a photo, and our AI does
+                        the rest.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 hover-scale">
+                <div class="card shadow bg-white p-3">
+                    <h3 class="fs-4 fw-semibold text-center">Improved Crop Health</h3>
+                    <p class="fs-custom-2 text-center">
+                        TomatoAidX helps you maintain healthier, more resilient tomato
+                        plants, leading to higher quality produce.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 hover-scale">
+                <div class="card shadow bg-white p-3">
+                    <h3 class="fs-4 fw-semibold text-center"> Data-Driven Insights</h3>
+                    <p class="fs-custom-2 text-center">
+                        Track disease patterns over time to make informed decisions about crop
+                        management and preventative measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

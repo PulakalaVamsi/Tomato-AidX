@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep learning models</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container-fluid py-5 hero-reverse">
+        <div class="container">
+            <h1 class="text-center fw-semibold fs-2"> Our AI-Powered Disease Detection Tool</h1>
+            <hr>
+            <p class="fs-5">
+                Tomato leaf diseases pose a significant threat to crop yields and farmer livelihoods.
+                Traditional methods of disease detection are often time-consuming, inaccurate, and rely on visual
+                inspection, which can be subjective and prone to error. Artificial intelligence offers a powerful
+                solution by automating the process and providing early, accurate diagnoses.
+            </p>
+            <p class="fs-5">
+                At the heart of TomatoAidX is our cutting-edge Convolutional Neural Network (CNN)
+                model. CNNs are a type of deep learning algorithm that excels at image analysis. Our CNN has been
+                trained on a vast dataset of tomato leaf images to recognize patterns and features associated with
+                various diseases, enabling it to accurately identify and classify different types of infections.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 bg-light">
+        <h1 class="text-center fw-semibold">How Our CNN Model Works</h1>
+        <hr>
+        <div class="row p-4">
+            <div class="col-md-4">
+                <img src="../static/images/model/cnn.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li class="fs-5">
+                        Our model is based on a CNN architecture. We then fine-tuned this model specifically for tomato
+                        leaf disease detection.
+                    </li>
+                    <li class="fs-5">
+                        The model consists of several convolutional layers that learn to extract relevant features from
+                        the input images, such as edges, textures, and shapes. These layers automatically learn the most
+                        discriminative features for identifying different diseases.
+                    </li>
+                    <li class="fs-5">
+                        Max pooling layers are used to reduce the spatial dimensions of the feature maps, making the
+                        model more computationally efficient and robust to minor variations in image size and
+                        orientation.
+                    </li>
+                    <li class="fs-5">
+                        Finally, fully connected layers combine the extracted features and produce a probability
+                        distribution over the different disease classes. The class with the highest probability is
+                        selected as the model's prediction.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 bg-primary text-white" id="result">
+        <div class="container">
+            <h2 class="text-center fw-semibold">Results and Performance</h2>
+            <hr>
+            <p class="fs-5">
+                <b> Training Accuracy : </b> 96.04%
+            </p>
+            <p class="fs-5">
+                <b> Test Accuracy : </b> 96.01%
+            </p>
+            <img src="../static/Models/output.png" alt="" class="img-fluid">
+        </div>
+    </div>
+
+
+    {% include 'footer.html' %}
+</body>
+
+</html>

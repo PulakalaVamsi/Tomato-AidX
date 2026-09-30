@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+instance/
+.env
+env/
+venv/
+static/images/test/
